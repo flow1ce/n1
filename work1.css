@@ -1,0 +1,358 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#horli
+{
+    display:flex;
+    background-color:dodgerblue;
+    justify-content:flex-end;
+    list-style:none;
+}
+#horli li
+{
+    color:white;
+    display:inline-block;
+    padding: 20px 10px;
+}
+#horli li:hover
+{
+    background-color:rgba(99, 163, 241, 0.978);
+    cursor:pointer;
+
+}
+#horli li a
+{
+    text-decoration: none;
+    color:white;
+}
+#sideli
+{
+    width: 8%;
+    background-color:dodgerblue;
+    position: fixed;
+    top:50%;
+    left: 2%;
+    transform: translateY(-50%);
+    z-index: 2;
+    list-style: none;
+    
+    
+}
+#sideli li
+{
+    padding: 10px;
+    margin: 10px ;
+    color: white;
+    text-align: center;
+}
+#sideli li:hover
+{
+    background-color:rgba(99, 163, 241, 0.978) ;
+    cursor: pointer;
+}
+#sideli li a
+{
+    text-decoration: none;
+    color: white;
+}
+#pa1
+{   
+    width:100%;
+    height: 800px;
+    position:absolute;
+    top:60.8px;
+    background-color: white;
+    z-index: 0;
+}
+#pa1 #back1
+{
+    width: 400px;
+    height: 800px;
+    z-index: 1;
+}
+#pa1 #back2
+{
+    width: 400px;
+    height: 800px;
+    
+    position: absolute;
+    right: 0%;
+    z-index:1 ;
+}
+#pa1 #view
+{
+    width: 60%;
+    height: 800px;
+    position:absolute;
+    top:0;
+    left: 20%; 
+    overflow: hidden;
+    z-index: 2;
+}
+#pa1 #view #pic
+{
+    display:flex;
+    width:400%;
+    height:100%;
+    border: 0;
+    transition: transform 0.8s ease;
+}
+#pa1 #view #pic img
+{
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    z-index: 3;
+
+}
+#pa1 input
+{
+    width:20px;
+    height: 20px;
+    opacity:0%;
+    cursor:pointer;
+    position:absolute;
+    z-index:3 ;
+}
+#pa1 p
+{
+    width: 9px;
+    height: 9px;
+    background-color: rgb(144, 239, 246);
+    border-radius: 100%;
+    position: absolute;
+    border: 4px solid rgba(39, 174, 57, 0.978);
+    z-index: 2;
+}
+#pa1 #c1
+{
+    bottom: 9.1%;
+    left:43.6%;
+    
+}
+#pa1 #c2
+{
+    bottom: 10%;
+    left:48%;
+    
+}
+#pa1 #c3
+{
+    bottom: 10%;
+    left:52%;
+   
+}
+#pa1 #c4
+{
+    bottom: 10%;
+    left:56%;
+    
+}
+#pa1 #c1+p
+{
+    bottom: 10%;
+    left:44%;
+}
+#pa1 #c2+p
+{
+    bottom: 10%;
+    left:48%;
+}
+#pa1 #c3+p
+{
+    bottom: 10%;
+    left:52%;
+}
+#pa1 #c4+p
+{
+    bottom: 10%;
+    left:56%;
+}
+#pa1 input:checked + p
+{
+    background-color: brown;
+}
+#view #c1:checked ~ #pic
+{
+    transform: translateX(0);
+}
+#view #c2:checked ~ #pic
+{
+    transform: translateX(-25%);
+}
+#view #c3:checked ~ #pic
+{
+    transform: translateX(-50%);
+}
+#view #c4:checked ~ #pic
+{
+    transform: translateX(-75%);
+}
+#pa2
+{
+    width:100%;
+    height:900px;
+    position: absolute;
+    top:860.8px;
+    z-index: 1;
+
+}
+#pa2 #bg1
+{
+    width:100%;
+    height: 900px;;
+    position: absolute;
+    z-index: 2;
+}
+#pa2 #bg2
+{
+    width: 60%;
+    height: 30%;
+    position: absolute;
+    top:27% ;
+    left: 23%;
+    z-index: 3;
+}
+#pa2 #w1 
+{
+    
+    color: rgb(177, 100, 100);
+    font-size: large;
+    font-family:fantasy;
+    position: absolute;
+    top:35%;
+    left: 30%;
+    z-index: 4;
+}
+#pa2 #eng
+{
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+    z-index: 4;
+}
+#pa3
+{
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: 1760.8px;
+    left: 0%;
+    z-index: 1;
+    
+
+}
+#pa3 #bg3
+{
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+}
+#pa3 #help1
+{
+    width: 30%;
+    height:40%;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+
+}
+#pa3 #help2
+{
+    width: 40%;
+    height:20%;
+    position: absolute;
+    right: 0%;
+    bottom: 2%;
+
+}
+#pa3 #bg4
+{
+    width: 40%;
+    height: 30%;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    z-index: 2;
+}
+#pa3 #bg5
+{
+    width: 40%;
+    height: 30%;
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    z-index: 2;
+}
+#pa3 #bg6
+{
+    width: 40%;
+    height: 30%;
+    position: absolute;
+    top: 32%;
+    right: 1%;
+    z-index: 2;
+}
+#pa3 #w2
+{
+    
+    position:absolute;
+    top:3%;
+    left: 2%;
+    z-index: 3;
+}
+#pa3 #w3
+{
+    
+    position:absolute;
+    top:6%;
+    right: 7%;
+    z-index: 3;
+}
+#pa3 #w4
+{
+    position:absolute;
+    top:38%;
+    right: 12%;
+    z-index: 3;
+}
+#pa4
+{
+    width: 100%;
+    height: 30%;
+    background-color: dodgerblue;
+    position: absolute;
+    top: 2760.8px;
+
+}
+#pa4 #downli
+{
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 37%;
+    list-style: none;
+    color: white;
+}
+#pa4 #downli li
+{
+    display: inline-block;
+    font-size: larger;
+    padding: 15px;
+}
+#pa4 #downli a
+{
+    text-decoration: none;
+    color: rgb(212, 221, 141);
+}
+#pa4 #downli .fin:hover
+{
+    background-color:rgba(99, 163, 241, 0.978) ;
+    cursor: pointer;
+}
+
+ 
